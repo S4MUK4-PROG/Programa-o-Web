@@ -3,7 +3,7 @@ Repositório das Atividades da disciplina.
 
 ##Sobre
 -Curso:Bacharelado em SI
--Semestre: 2026/2
+-Semestre: 2026/02
 
 ##Atividades
 -[X] Atividade 01
