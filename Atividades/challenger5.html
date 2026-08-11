@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 5 - Mini Landing Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        /* Header e Navegação */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2563eb;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #475569;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #2563eb;
+        }
+        /* Área de Destaque (Hero) */
+        .hero {
+            background: linear-gradient(135deg, #1e40af, #2563eb);
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            color: #93c5fd;
+        }
+        .cta-btn {
+            background-color: #ffffff;
+            color: #2563eb;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.2s;
+            display: inline-block;
+        }
+        .cta-btn:hover {
+            background-color: #f1f5f9;
+        }
+        /* Seção de Cards */
+        .features {
+            max-width: 1100px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+        .cards-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding: 30px;
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            text-align: center;
+        }
+        .card h3 {
+            margin-bottom: 15px;
+            color: #1e293b;
+        }
+        .card p {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+        /* Rodapé */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">InovaTech</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#features">Recursos</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Transforme sua Presença Digital</h1>
+        <p>Soluções modernas em desenvolvimento web, design e inovação para acelerar o crescimento do seu negócio.</p>
+        <a href="#features" class="cta-btn">Saiba Mais</a>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Nossos Diferenciais</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Alta Performance</h3>
+                <p>Aplicações otimizadas para carregar instantaneamente, garantindo a melhor experiência para o usuário.</p>
+            </div>
+            <div class="card">
+                <h3>Design Responsivo</h3>
+                <p>Layouts flexíveis que se adaptam perfeitamente a smartphones, tablets e computadores.</p>
+            </div>
+            <div class="card">
+                <h3>Suporte Dedicado</h3>
+                <p>Equipe especializada pronta para auxiliar em cada etapa do seu projeto tecnológico.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 InovaTech. Todos os direitos reservados. Desenvolvido para a disciplina de Programação Web - IFMT.</p>
+    </footer>
+</body>
+</html>

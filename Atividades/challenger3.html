@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3 - Card de Produto com Botão</title>
+    <style>
+        body {
+            background-color: #f3f4f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            max-width: 300px;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-card h2 {
+            font-size: 1.25rem;
+            color: #1f2937;
+            margin: 0 0 10px 0;
+        }
+        .product-card p {
+            color: #6b7280;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin: 0 0 15px 0;
+        }
+        .price {
+            font-size: 1.35rem;
+            font-weight: bold;
+            color: #059669;
+            margin-bottom: 20px;
+        }
+        .buy-btn {
+            display: block;
+            width: 100%;
+            background-color: #059669;
+            color: #ffffff;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            text-align: center;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        .buy-btn:hover {
+            background-color: #047857;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80" alt="Fones de Ouvido">
+        <div class="product-info">
+            <h2>Headphone Wireless Pro</h2>
+            <p>Som de alta fidelidade, cancelamento ativo de ruído e bateria de longa duração para o seu dia a dia.</p>
+            <div class="price">R$ 299,90</div>
+            <a href="#" class="buy-btn">Comprar</a>
+        </div>
+    </div>
+</body>
+</html>
