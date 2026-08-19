@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quadro Kanban</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header id="cabecalho-principal">
+    <h1>Sprint Atual - Projeto Web</h1>
+  </header>
+
+  <main class="kanban-container">
+    <!-- Coluna A Fazer -->
+    <section class="coluna">
+      <div class="coluna-topo">
+        <h2>A Fazer</h2>
+        <span class="contador">2</span>
+      </div>
+      <div class="cards-container">
+        <article class="card">
+          <span class="tag tag-frontend">Front-end</span>
+          <h3>Criar layout da tela de login</h3>
+          <div class="card-rodape">
+            <div class="avatar-sm">JS</div>
+          </div>
+        </article>
+        <article class="card">
+          <span class="tag tag-db">Banco de Dados</span>
+          <h3>Modelar diagrama ER do estoque</h3>
+          <div class="card-rodape">
+            <div class="avatar-sm">MS</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Coluna Fazendo -->
+    <section class="coluna">
+      <div class="coluna-topo">
+        <h2>Fazendo</h2>
+        <span class="contador">1</span>
+      </div>
+      <div class="cards-container">
+        <article class="card">
+          <span class="tag tag-bug">Bug</span>
+          <h3>Corrigir espaçamento do cabeçalho</h3>
+          <div class="card-rodape">
+            <div class="avatar-sm">JS</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Coluna Concluído -->
+    <section class="coluna">
+      <div class="coluna-topo">
+        <h2>Concluído</h2>
+        <span class="contador">2</span>
+      </div>
+      <div class="cards-container">
+        <article class="card">
+          <span class="tag tag-backend">Back-end</span>
+          <h3>Configurar rotas da API</h3>
+          <div class="card-rodape">
+            <div class="avatar-sm">AL</div>
+          </div>
+        </article>
+        <article class="card">
+          <span class="tag tag-frontend">Front-end</span>
+          <h3>Criar estrutura de pastas do projeto</h3>
+          <div class="card-rodape">
+            <div class="avatar-sm">JS</div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

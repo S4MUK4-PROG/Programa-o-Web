@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px 20px;
+}
+
+.pricing-secao {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.pricing-cabecalho {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pricing-cabecalho h2 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.pricing-cabecalho p {
+  color: #94a3b8;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.plano-card {
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 32px 24px;
+  border: 1px solid #334155;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#plano-destaque {
+  border: 2px solid #3b82f6;
+  background-color: #1a2744;
+  transform: scale(1.04);
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.2);
+}
+
+.selo-popular {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.plano-nome {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.plano-desc {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+.plano-preco {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.plano-preco span {
+  font-size: 1rem;
+  color: #94a3b8;
+  font-weight: normal;
+}
+
+.recursos-lista {
+  list-style: none;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.recursos-lista li {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin-bottom: 12px;
+}
+
+.btn-plano {
+  background-color: #334155;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-plano:hover {
+  background-color: #475569;
+}
+
+.btn-destaque {
+  background-color: #3b82f6;
+}
+
+.btn-destaque:hover {
+  background-color: #2563eb;
+}

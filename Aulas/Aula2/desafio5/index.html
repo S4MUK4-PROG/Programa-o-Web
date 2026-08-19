@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Status do Sistema</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <main class="status-container">
+    <header class="status-cabecalho">
+      <h1>Status dos Serviços</h1>
+      <p class="ultima-atualizacao">Atualizado em tempo real</p>
+    </header>
+
+    <!-- Banner Geral -->
+    <section id="banner-geral" class="banner banner-ok">
+      <span class="icone-status">✔</span>
+      <h2>Todos os sistemas estão operacionais</h2>
+    </section>
+
+    <!-- Lista de Serviços -->
+    <section class="secao-servicos">
+      <h3>Disponibilidade Atual</h3>
+
+      <div class="servico-item">
+        <span class="servico-nome">API de Autenticação</span>
+        <span class="selo operacional">Operacional</span>
+      </div>
+
+      <div class="servico-item">
+        <span class="servico-nome">Banco de Dados Relacional</span>
+        <span class="selo operacional">Operacional</span>
+      </div>
+
+      <div class="servico-item">
+        <span class="servico-nome">Gateway de Pagamento</span>
+        <span class="selo degradado">Desempenho Degradado</span>
+      </div>
+
+      <div class="servico-item">
+        <span class="servico-nome">Serviço de Notificações</span>
+        <span class="selo fora">Fora do Ar</span>
+      </div>
+    </section>
+
+    <!-- Histórico de Disponibilidade (CSS Grid de Barras) -->
+    <section class="secao-uptime">
+      <div class="uptime-topo">
+        <h3>Histórico (Últimos 30 dias)</h3>
+        <span class="uptime-taxa">99.85% de Uptime</span>
+      </div>
+      <div class="barras-grid">
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-amarela" title="Degradação de serviço"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-vermelha" title="Instabilidade"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="100% operacional"></div>
+        <div class="barra barra-verde" title="Hoje: 100% operacional"></div>
+      </div>
+    </section>
+
+    <!-- Incidentes Recentes -->
+    <section class="secao-incidentes">
+      <h3>Incidentes Recentes</h3>
+      <article class="card-incidente">
+        <header class="incidente-topo">
+          <h4>Lentidão no processamento de filas</h4>
+          <time datetime="2026-08-18">Hoje, 14:32</time>
+        </header>
+        <p class="incidente-desc">Identificamos uma sobrecarga temporária no gateway e nossa equipe de infraestrutura já aplicou a mitigação necessária.</p>
+        <span class="incidente-status-tag tag-resolvido">Resolvido</span>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

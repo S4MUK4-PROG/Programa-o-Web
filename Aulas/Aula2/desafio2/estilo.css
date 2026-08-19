@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  padding: 24px;
+}
+
+#cabecalho-principal {
+  margin-bottom: 24px;
+}
+
+#cabecalho-principal h1 {
+  font-size: 1.8rem;
+  color: #0f172a;
+}
+
+.kanban-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.coluna {
+  background-color: #e2e8f0;
+  flex: 1;
+  min-width: 280px;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.coluna-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.coluna-topo h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.contador {
+  background-color: #cbd5e1;
+  color: #475569;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #cbd5e1;
+}
+
+.card h3 {
+  font-size: 0.95rem;
+  margin: 8px 0 12px 0;
+  font-weight: 600;
+}
+
+.card-rodape {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.avatar-sm {
+  width: 28px;
+  height: 28px;
+  background-color: #64748b;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.tag {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.tag-frontend {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.tag-backend {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.tag-db {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.tag-bug {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
